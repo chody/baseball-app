@@ -22,5 +22,9 @@ class PagesController < ApplicationController
   def news
     @title = "News"
   end
+  
+  def help
+    @title = "Help"
+  end
 
 end
