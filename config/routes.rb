@@ -1,4 +1,16 @@
 BaseballApp::Application.routes.draw do
+  get "pages/home"
+
+  get "pages/contact"
+
+  get "pages/about"
+
+  get "pages/teams"
+
+  get "pages/standings"
+
+  get "pages/news"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
