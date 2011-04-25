@@ -1,10 +1,13 @@
 BaseballApp::Application.routes.draw do
+  resources :users
+
   match '/contact', :to => 'pages#contact'
   match '/about', :to => 'pages#about'
   match 'help', :to => 'pages#help'
   match '/news', :to => 'pages#news'
   match '/standings', :to => 'pages#standings'
   match '/teams', :to => 'pages#teams'
+  match '/signup', :to => 'users#new'
   
 root :to => 'pages#home'
   
